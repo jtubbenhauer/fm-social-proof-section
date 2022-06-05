@@ -4,7 +4,7 @@ desktop: 1440 */
 
 :root {
   --dark-magenta: hsl(300, 43%, 22%);
-  --dark-magenta2: hsl(300, 43%, 22%, 0.7);
+  --dark-magenta2: hsl(300, 43%, 22%, 0.9);
   --soft-pink: hsl(333, 80%, 67%);
   --dark-grey-magenta: hsl(303, 10%, 53%);
   --light-grey-magenta: hsl(300, 24%, 96%);
@@ -22,7 +22,6 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-image: url(./images/bg-pattern-top-desktop.svg),
     url(./images/bg-pattern-bottom-desktop.svg);
   background-size: auto, cover;
@@ -31,10 +30,10 @@ body {
 
 .wrapper {
   width: 80vw;
+  height: 100vh;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .top {
@@ -77,7 +76,7 @@ body {
   align-items: center;
   margin-bottom: 10px;
   border-radius: 8px;
-  width: 380px;
+  width: 400px;
   background-color: var(--light-grey-magenta);
 }
 
@@ -96,6 +95,60 @@ body {
 .star-text {
   color: var(--dark-magenta);
   font-weight: bold;
+}
+
+.bottom-wrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 320px;
+  border-radius: 5px;
+  padding: 30px;
+  background: var(--dark-magenta);
+}
+
+.customer {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.test2 {
+  margin-top: 10px;
+}
+
+.test3 {
+  margin-top: 20px;
+}
+
+.customer-subtext {
+  color: var(--soft-pink);
+}
+
+.customer-name,
+.customer-subtext {
+  margin: 5px;
+}
+
+.customer-text,
+.review {
+  color: var(--light-grey-magenta);
+}
+
+.review {
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 375px) {
