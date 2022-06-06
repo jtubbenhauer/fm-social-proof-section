@@ -20,6 +20,10 @@ desktop: 1440 */
 body {
   font-family: "League Spartan", sans-serif;
   font-size: 15px;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .container {
@@ -75,7 +79,7 @@ p {
   background-color: var(--dark-magenta);
   padding: 2rem;
   margin: 0 1rem;
-  border-radius: 10px;
+  border-radius: 7px;
   margin-bottom: 1rem;
 }
 
@@ -101,11 +105,89 @@ p {
   padding-left: 1rem;
 }
 
-.testimonial-wrapper {
-}
-
 .review {
   color: hsl(0, 0%, 100%);
   text-align: left;
   padding: 0;
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+  }
+
+  .hero-text {
+    width: 50%;
+    text-align: left;
+    margin: 0;
+  }
+
+  .headline {
+    width: 70%;
+    margin: 0 0 1rem;
+    line-height: 2.5rem;
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  .subheader {
+    text-align: left;
+    padding: 0;
+    width: 65%;
+  }
+
+  .ratings {
+    margin-top: 1.5rem;
+  }
+
+  .rating-div {
+    flex-direction: row;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+  }
+
+  .star-text {
+    text-align: left;
+    padding: 0;
+  }
+
+  .stars {
+    margin: 0;
+    padding-right: 2rem;
+  }
+
+  .rating2 {
+    margin-left: 3rem;
+  }
+
+  .rating3 {
+    margin-left: 6rem;
+  }
+
+  .testimonial-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .testimonial {
+    height: fit-content;
+    min-height: 200px;
+  }
+
+  .test2 {
+    margin-top: 1rem;
+  }
+
+  .test3 {
+    margin-top: 2rem;
+  }
 }
